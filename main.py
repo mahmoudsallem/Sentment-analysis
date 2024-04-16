@@ -11,7 +11,8 @@ logging.set_verbosity_error()
 # ## Initialize an app
 app = FastAPI(debug=True)
 
-pipe = pipeline("text-classification", model="cardiffnlp/twitter-roberta-base-sentiment-latest")
+pipe = pipeline("sentiment-analysis")
+# pipe = pipeline("text-classification", model="cardiffnlp/twitter-roberta-base-sentiment-latest")
 
 
 # Create a translator object
